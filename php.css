@@ -1,0 +1,130 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1e1e2f;
+    padding: 15px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #61dafb;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #333;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #1e1e2f;
+    top: 35px;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    border-radius: 4px;
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+}
+
+main{
+    padding: 30px;
+}
+
+h2{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom:2px solid #c5c3c3;
+    border-radius: 2px;
+}
+
+section p{
+    width: 1000px;
+    padding: 20px;
+    text-align: justify;
+    margin: auto;
+    margin-top: 30px;
+}
+section ul {
+    width: 70%;
+    background-color: #8c9aff44;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 230px;
+    margin-top: 20px;
+
+    
+}
+
+section ul li{
+
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 40px;
+
+}
+
+
+/* Footer */
+footer {
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
