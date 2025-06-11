@@ -129,15 +129,41 @@ footer {
     margin-top: 40px;
 }
 
+
+/* Estilos para el contenedor de código */
 pre {
-  background-color: black;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  overflow-x: auto;
+    background-color: #2d2d2d; 
+    color: #f8f8f2; 
+    padding: 15px;
+    border-radius: 8px; 
+    overflow-x: auto; 
+    font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace; 
+    font-size: 0.9em; 
+    line-height: 1.4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 20px 0; 
 }
 
+
 code {
-  font-family: monospace;
-  white-space: pre;
+    
+    color: inherit;
+    font-family: inherit;
+    white-space: pre; 
+}
+
+.html-tag {
+    color: #e06c75; 
+}
+.html-attribute {
+    color: #e5c07b; 
+}
+.html-value {
+    color: #98c379; 
+}
+.js-keyword {
+    color: #c678dd;  
+}
+.js-string {
+    color: #98c379; 
 }

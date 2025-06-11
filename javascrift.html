@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog de Programación</title>
+    <link rel="stylesheet" href="javascrift.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">CodeBlog</div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Lenguajes ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">PHP</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>JavaScript</h2>
+            <p>JavaScript es un lenguaje de programación del lado del cliente, lo que significa que el código JavaScript
+                se ejecuta directamente en el navegador web del usuario. Su principal fortaleza radica en la capacidad
+                de añadir interactividad y dinamismo a las páginas web que PHP, por sí solo, no puede proporcionar.
+                Entre sus usos más comunes se encuentran:</p>
+
+            <ul>
+                <li>Manipulación del DOM (Document Object Model): Cambiar el contenido, estilo y estructura de una
+                    página HTML en tiempo real.</li>
+                <li>Validación de formularios en el cliente: Comprobar la entrada del usuario antes de enviarla al
+                    servidor, mejorando la experiencia del usuario y reduciendo la carga del servidor.</li>
+                <li>Efectos visuales y animaciones: Crear sliders de imágenes, menús desplegables, y otras animaciones.
+                </li>
+                <li>Interacciones asíncronas (AJAX): Enviar y recibir datos del servidor sin tener que recargar la
+                    página completa, lo que permite crear experiencias de usuario más fluidas (por ejemplo, cargar
+                    comentarios o actualizar un feed).</li>
+                <li>Desarrollo de aplicaciones web de una sola página (SPA): Frameworks como React, Angular y Vue.js
+                    permiten construir aplicaciones complejas que funcionan en un solo HTML, actualizando el contenido
+                    dinámicamente.</li>
+                <li>Desarrollo back-end (con Node.js): Aunque originalmente es del lado del cliente, Node.js ha
+                    extendido JavaScript al lado del servidor, permitiendo el desarrollo full-stack con un solo
+                    lenguaje.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplo Interactivo</h2>
+
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Interactivo Corto&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="mensaje"&gt;Haz clic en el botón.&lt;/p&gt;
+    &lt;button onclick="cambiarTexto()"&gt;Cambiar&lt;/button&gt;
+
+    &lt;script&gt;
+        function cambiarTexto() {
+            document.getElementById('mensaje').textContent = '¡Texto cambiado!';
+        }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+            <p>
+                Crear un archivo index.html copiar el codigo anterior dentro del archivo 
+            </p>
+
+            <ul>Cómo funciona:
+                <li>El HTML tiene un párrafo (p) con el id="mensaje" y un botón (button).</li>
+                <li>El botón tiene un atributo onclick="cambiarTexto()" que ejecuta la función cambiarTexto() cuando se hace clic.</li>
+                <li>El JavaScript está directamente en la etiqueta script dentro del HTML. La función cambiarTexto() simplemente busca el elemento con el id =mensaje y cambia su textContent (el texto que contiene).</li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Autores: Onasis García, Angel Campuzano y Javier Orozco</p>
+    </footer>
+</body>
+
+</html>
