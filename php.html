@@ -27,10 +27,7 @@
   </header>
 
   <main>
-    <section>
-        <h2>PHP y JavaScript</h2>
-        <p>PHP y JavaScript son dos de los lenguajes de programación más utilizados en el desarrollo web, cada uno con roles y características distintivas que los hacen complementarios en la creación de aplicaciones web dinámicas e interactivas.</p>
-    </section>
+  
 
     <section>
 <h2>PHP (Hypertext Preprocessor)</h2>
@@ -47,36 +44,37 @@
 <p>PHP se incrusta directamente en el código HTML, lo que facilita la combinación de lógica de servidor con la estructura de la página. Es un lenguaje de código abierto y cuenta con una vasta comunidad y una gran cantidad de frameworks (como Laravel, Symfony, CodeIgniter) que agilizan el desarrollo.</p>
     </section>
 
-    <section>
-        <h2>JavaScript</h2>
-        <p>JavaScript es un lenguaje de programación del lado del cliente, lo que significa que el código JavaScript se ejecuta directamente en el navegador web del usuario. Su principal fortaleza radica en la capacidad de añadir interactividad y dinamismo a las páginas web que PHP, por sí solo, no puede proporcionar. Entre sus usos más comunes se encuentran:</p>
-
-        <ul>
-            <li>Manipulación del DOM (Document Object Model): Cambiar el contenido, estilo y estructura de una página HTML en tiempo real.</li>
-            <li>Validación de formularios en el cliente: Comprobar la entrada del usuario antes de enviarla al servidor, mejorando la experiencia del usuario y reduciendo la carga del servidor.</li>
-            <li>Efectos visuales y animaciones: Crear sliders de imágenes, menús desplegables, y otras animaciones.</li>
-            <li>Interacciones asíncronas (AJAX): Enviar y recibir datos del servidor sin tener que recargar la página completa, lo que permite crear experiencias de usuario más fluidas (por ejemplo, cargar comentarios o actualizar un feed).</li>
-            <li>Desarrollo de aplicaciones web de una sola página (SPA): Frameworks como React, Angular y Vue.js permiten construir aplicaciones complejas que funcionan en un solo HTML, actualizando el contenido dinámicamente.</li>
-            <li>Desarrollo back-end (con Node.js): Aunque originalmente es del lado del cliente, Node.js ha extendido JavaScript al lado del servidor, permitiendo el desarrollo full-stack con un solo lenguaje.</li>
-        </ul>
-    </section>
+    
 
     <section>
 <h2>Ejemplo Interactivo</h2>
 
-<p>La combinación de PHP y JavaScript es muy potente para construir aplicaciones web modernas. PHP se encarga de la lógica de negocio, la interacción con la base de datos y la generación inicial del HTML, mientras que JavaScript añade la interactividad una vez que la página ha sido cargada en el navegador.</p>
+<pre><code>
+&lt;?php
+for ($i = 1; $i &lt;= 5; $i++) {
+    echo "El número es: " . $i . "&lt;br&gt;";
+}
+?&gt;
+</code></pre>
 
-<p>Para generar un ejemplo interactivo completo entre PHP y JavaScript, vamos a crear un escenario sencillo: un contador que se puede incrementar desde el navegador utilizando JavaScript, y el valor actual del contador se almacena y se recupera del servidor utilizando PHP.</p>
-
-<p>
-    Necesitaremos dos archivos principales:
-</p>
-
-<p>
-
-</p>
 
 <h2>Explicación del funcionamiento:</h2>
+
+<p>Este código utiliza un bucle for para contar del 1 al 5 e imprimir cada número:</p>
+
+  <ul>
+  <li>for ($i = 1; $i <= 5; $i++): Esta es la estructura del bucle for.</li>
+  <li>$i = 1: Se inicializa la variable $i (que actuará como nuestro contador) en 1.</li>
+  <li>$i <= 5: Esta es la condición que se evalúa antes de cada iteración. El bucle continuará mientras $i sea menor o igual a 5.</li>
+  <li>$i++: Esta es la expresión de incremento. Después de cada iteración, el valor de $i se aumenta en 1.</li>
+  <li>echo "El número es: " . $i . "<br>";: Esta línea se ejecuta en cada iteración del bucle</li>
+  <li>"El número es: ": Es una cadena de texto fija.</li>
+  <li>.: Es el operador de concatenación en PHP, usado para unir cadenas de texto con</li>
+  <li>$i: Muestra el valor actual de la variable $i en esa iteración.</li>
+  <li><br>: Es una etiqueta HTML que inserta un salto de línea, haciendo que cada mensaje aparezca en una línea nueva en el navegador.</li>
+</ul>
+
+
     </section>
 
     
